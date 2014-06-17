@@ -1,6 +1,10 @@
 "What hash is it?" service allows you to identify the hashing functions used of your hash(es) based on their characteristics.
 In few words, this is a Node.js application based on Hash-identifier project and I created a Web service using it. 
 
+### Live demo
+
+A live demo is available [here](http://what-hash-is-it.herokuapp.com) and is hosted thanks to [Heroku](https://heroku.com/).
+
 ### Are the hashes stored somewhere?
 
 No, they are not stored in some database or something. 
