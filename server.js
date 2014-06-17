@@ -49,4 +49,4 @@ app.get('/API/hash/:hashstr', function(req, res) {
     });
 });
 
-server.listen(8080);
+server.listen(80);
