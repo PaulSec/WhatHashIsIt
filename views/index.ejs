@@ -1,0 +1,67 @@
+<% include header.ejs %>
+
+      <div class="container-full">
+         <div class="row">
+            <div class="col-lg-12 text-center v-center">
+               <h1>What hash is it?</h1>
+               <p class="lead">Drop your hash and identify it.</p>
+               <br><br><br>
+               <form class="col-lg-12">
+                  <div class="input-group" style="width:340px;text-align:center;margin:0 auto;">
+                     <input id="hash" class="form-control input-lg" placeholder="Your hash here" type="text">
+                     <span class="input-group-btn"><button id="hash-submit" class="btn btn-lg btn-primary" type="button">OK</button></span>
+                  </div>
+               </form>
+            </div>
+         </div>
+         <br />
+         <div id="results" class="alert alert-info message">
+         </div>
+         <div id="no-results" class="alert alert-danger message">
+         </div>
+         <div class="row">
+            <div class="col-lg-12 text-center v-center" style="font-size:39pt;">
+               <a href="https://twitter.com/PaulWebSec"><i class="icon-twitter"></i></a>
+               <a href="https://github.com/PaulSec"><i class="icon-github"></i></a>
+            </div>
+         </div>
+         <br><br><br><br><br>
+      </div>
+      <!-- /container full -->
+      <div class="container">
+         <hr>
+         <div class="row">
+            <div class="col-md-4">
+               <div class="panel panel-default">
+                  <div class="panel-heading">
+                     <h3>About</h3>
+                  </div>
+                  <div class="panel-body">I was looking for some online resources where you could identify hashes but I found none. This project reuses awesome <a href="https://code.google.com/p/hash-identifier/">hashes-identifier</a>. <br><br>
+                    At the moment, this project supports more than 50 hashing functions. 
+                    Moreover, the project will be open source in few weeks so you'll can contribute to it and create your own instance. 
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="panel panel-default">
+                  <div class="panel-heading">
+                     <h3>REST API</h3>
+                  </div>
+                  <div class="panel-body">This project includes a REST API that you can interact with. I developed a code sample using Python available on <a href="#">Gists</a>.
+                    <br /><br />The API is accessible through a GET Request at: <br /><b>/API/hash/my-hash</b> and the response is in JSON format.
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="panel panel-default">
+                  <div class="panel-heading">
+                     <h3>Contribute</h3>
+                  </div>
+                  <div class="panel-body">
+                    If you want to contribute to this project by implementing new hashing function checks, fork the Git repository, do your changes and then, a <i>"pull request"</i>. 
+                  </div>
+               </div>
+            </div>
+         </div>
+
+<% include footer.ejs %>
