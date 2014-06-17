@@ -36,7 +36,6 @@ app.get('/about', function (req, res) {
 });
 
 app.get('/API/hash/:hashstr', function(req, res) {
-    console.log('Hash ' + req.params.hashstr);
     res.setHeader('Content-Type', 'application/json');
     utils.getAllModules(function (modules) {
         //console.log(modules);
