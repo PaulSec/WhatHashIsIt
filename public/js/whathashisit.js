@@ -1,14 +1,14 @@
-$("#hash-submit").on('click', function() {
+$("#hash-form").on('submit', function() {
     hideMessages();
     hash = $("#hash").val();
     if (hash.length > 0) {
-        $.getJSON( "/API/hash/" + hash, function(data) {
+        $.getJSON( "/API/hash/" + encodeURIComponent(hash), function(data) {
             // message with Hash
             message = '<strong>Hash: ' + escapeHTML(hash) + ' (' + hash.length + ' chars)</strong><br/>'
             if (data.length > 0) {
                 $("#results").text("Results");
-                
-                $.each(data, function(index, val) { 
+
+                $.each(data, function(index, val) {
                     message += val + '<br />'
                 });
                 $("#results").html(message);
@@ -20,6 +20,7 @@ $("#hash-submit").on('click', function() {
             }
         });
     }
+    return false;
 });
 
 $(function() {
