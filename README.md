@@ -7,7 +7,16 @@ No, they are not stored in some database or something.
 
 ### I want to run it locally!
 
-To do so, nothing simple. (more to come)
+To do so, clone the repository: 
+
+```git clone https://github.com/PaulSec/WhatHashIsIt.git```
+
+Then ```npm install```
+
+And to finish :  ```node server.js```. 
+The application (including the REST API) is accessible at: ```http://127.0.0.1:8080```. 
+
+Then, 
 
 ### How can I interact with the REST API? 
 
