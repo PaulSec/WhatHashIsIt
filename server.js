@@ -49,4 +49,8 @@ app.get('/API/hash/:hashstr', function(req, res) {
     });
 });
 
-server.listen(80);
+var port = Number(process.env.PORT || 8080);
+server.listen(port, function() {
+  console.log("Listening on port " + port);
+});
+
